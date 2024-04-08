@@ -53,3 +53,13 @@ Para el código inicial he tenido que hacer algun cambio porque con las últimas
 
 ## 1.3 Renderizado de componentes en el DOM
 He aprendido lo básico de renderizado de componentes aplicando todo lo anterior y he hecho los ejercicios propuestos de crear una aplicación de lista de tareas.
+
+***(1 de abril)***
+
+## 1.4 Comunicación y estado de los componentes
+Aprendí el uso de los props para las propiedades de los componentes, si se quieren definir los tipos usaremos la librería de PropTypes
+Los estados no pueden ser compartidos por los componentes hermanos al menos que se definan en el padre y se deleguen
+
+## Finalización del primer curso de la carrera y realización de los últimos ejercicios
+Finalmente completé la aplicación web para añadir las funcionalidades que faltaban usando todo lo aprendido y siguiendo las explicaciones del curso.
+Aprobado el examen al 2º intento
