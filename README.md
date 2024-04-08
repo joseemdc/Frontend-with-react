@@ -63,3 +63,20 @@ Los estados no pueden ser compartidos por los componentes hermanos al menos que 
 ## Finalización del primer curso de la carrera y realización de los últimos ejercicios
 Finalmente completé la aplicación web para añadir las funcionalidades que faltaban usando todo lo aprendido y siguiendo las explicaciones del curso.
 Aprobado el examen al 2º intento
+
+***(8 de abril)***
+
+## 2.1 Comunicación con el servidor
+
+SPA: aplicación de pagina única donde se renderiza por el cliente en JavaScript.
+AJAX: conjunto de tecnologías que sustenta las SPA.
+Las peticiones se hacen con XMLHttpRequest o con la mas reciente API de Fetch
+Las peticiones mas usadas son `POST` y `GET`
+Las `GET` tienen dirección, cabeceras y parámetros mientras que las `POST` también tienen body
+Las peticiones Fetch están compuestas por un objeto init con unas cabeceras Headers y devuelven respuesta en formato Response
+Un Modelo de Front es una respresentacion abstracta de la entidad de backend
+Un servicio front consume información del backend y simplifica el proceso de consumo del servidor
+Los modelos de Front-end no tienen por que coincidir con los de Backend
+Un interceptor es una función que procesa la respuesta o el envio de una peticion
+
+*Creación de otra aplicación de react para este curso intermedio mediante create-react-app de forma sencilla*
