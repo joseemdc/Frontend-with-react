@@ -89,3 +89,22 @@ Los modelos de Front-end no tienen por que coincidir con los de Backend
 Un interceptor es una función que procesa la respuesta o el envio de una peticion
 
 *Creación de otra aplicación de react para este curso intermedio mediante create-react-app de forma sencilla*
+
+***(14 de abril)***
+
+## 2.2 Rutas, navegación y portables
+
+En un enrutamiento para una aplicacion de una sola página simple (SPA) el router es un "falso enrutador" ya que realmente no produce la recarga de la página.
+
+El enrutador actúa como un switch que muestra el componente correspondiente de la página.
+
+El enrutador más usado y recomendado por el propio equipo de React es React Router.
+
+La navegación básica la podremos hacer mediante la etiqueta `Link to` o `NavLink`, pueden tener las propiedades pathname, search, hash y state.
+
+Como resumen la navecación en una aplicación web está formada por:
+- Enrutamiento: mostrar u ocultar rutas
+- Navegación: mandar y recibir parámetros, search y hash
+- Gestión del historial: que permite volver a un punto y gestionar el registro de navegación
+
+Para usar el historial de nabegación usaremos la API HTML5 History de la cual React Router implementa una versión propia
