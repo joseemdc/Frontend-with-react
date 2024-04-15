@@ -108,3 +108,49 @@ Como resumen la navecación en una aplicación web está formada por:
 - Gestión del historial: que permite volver a un punto y gestionar el registro de navegación
 
 Para usar el historial de nabegación usaremos la API HTML5 History de la cual React Router implementa una versión propia
+
+***(14 de abril)***
+
+Los portales nos permiten crear un acceso a un componente superior y mandar el contenido de un contenido inferior a ese acceso, de esta forma podemos mantener la jerarquía "en cascada" de react
+Se comportan como un hijo más en React y se usan en casos como modales, diálogos, tooltips, etc..
+
+## 2.2 Abstracción de funcionalidades 
+
+Componentes de alto orden o nivel (HOC)-> están basados en las funciones de alto orden, consisten en un componente que devuelve otro componente
+
+High order functions (HOF)-> funcion que recibe una funcion A y una B y ejecuta sus partes comunes y luego las diferentes por separado
+
+Los HOC-> sirven para gestionar las preocupaciones transversales (partes comunes que ejecutan distintos componentes) como por ejemplo el loading o la autenticación
+
+Importante nunca mutar un componente
+
+Las render props tienen como objetivo desligar la lógica de un componente de su representación visual mejorando la reusabilidad
+
+También solucionan las preocupaciones transversales y se complementan conlos HOCs
+
+React Hooks-> hasta ahora solo podia controlar el ciclo de vida de un componente si este era un componente de clase, pero gracias a React Hook podemos usarlo con estados en los componentes funcionales
+
+Tenemos los Hook de estado para gestionar el estado del componente
+
+El hook de efecto recibe una funcion que se ejecuta si se cumple la condición después de cada renderización
+
+El hook de contexto permite usar el contexto de React sin necesitar un componente de Clase
+
+## 2.2 Gestión del estado
+
+Cascada de props-> significa que el paso del estado de un componente a otro se realiza verticalmente y hacia abajo por "cascada"
+
+Se puede "subir" el estado hacia arriba mediante Callbacks pero puede llegar a complicarse mucho
+
+Podemos usar distintas soluciones para centralizar el estado como por ejemplo con localStorage o con Redux o Flux
+
+Redux almacena el estado de forma global y de solo lectura
+
+El hook useReducer nos permite implementar nativamente en la librería patrones de f¡gestión del estado como Redux
+
+Recomendaciones:
+- Favorecer la cascada siguiendo la jerarquía y evitar el uso de callback para subir el estado
+- Mantener los componentes puros (que la renderizacion solo dependa de las propiedades)
+- Centralizar si es necesario(no necesario en proyectos pequeños si se realizan buenas prácticas como las anteriores)
+
+##Finalizado el curso intermedio y realizado primer intento del examen obteniendo un 70% de la puntuación
