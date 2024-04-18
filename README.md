@@ -153,4 +153,18 @@ Recomendaciones:
 - Mantener los componentes puros (que la renderizacion solo dependa de las propiedades)
 - Centralizar si es necesario(no necesario en proyectos pequeños si se realizan buenas prácticas como las anteriores)
 
-##Finalizado el curso intermedio y realizado primer intento del examen obteniendo un 70% de la puntuación
+## Finalizado el curso intermedio y realizado primer intento del examen obteniendo un 70% de la puntuación
+
+***(18 de abril)***
+
+## Aprobado el examen del curso intermedio al 2º intento
+
+## 3.1 Desarrollo con Hooks
+
+La motivación para usarlos es que nos permiten usar el estado en componentes funcionales, además:
+- Los componentes de clase complejos suelen ser difíciles de entender
+- El uso de `this` funciona de forma distinta  en JavaScript que en otros lenguajes, se quiere huir de su uso
+- Es mas recomendado por el equipo de React
+
+Los hooks permiten funcionalidades como el estado, gestión de efectos secundarios y acceso a los contextos existentes de React
+Aprovechan el concepto de hoisting y closre para crear contextos en donde puedan existir y mantener sus valores entre ejecuciones.
