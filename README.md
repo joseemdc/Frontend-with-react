@@ -294,3 +294,7 @@ Actualmente es una feature muy nueva y que aun tiene una baja adopción.
 En el momento de la creación de este curso aún era una feature experimental por lo que no incluye una explicación sobre su uso pero su llegada cambió cosas de las que se han explicado en cursos anteriores.
 
 ## Finalizado el curso avanzado y aprobado el examen al primer intento
+
+***(22 de abril)***
+
+## Realizado el siguiente curso de la carrera que es un taller sobre los Hooks de React, lo he realizado en la aplicación que creé en el cruso de react intermedio, todo el código nuevo está dentro del archivo App.js, queda finalizado este taller
