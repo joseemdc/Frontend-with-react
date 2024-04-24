@@ -298,3 +298,66 @@ En el momento de la creación de este curso aún era una feature experimental po
 ***(22 de abril)***
 
 ## Realizado el siguiente curso de la carrera que es un taller sobre los Hooks de React, lo he realizado en la aplicación que creé en el cruso de react intermedio, todo el código nuevo está dentro del archivo App.js, queda finalizado este taller
+
+***(24 de abril)***
+
+## Inicio del curso de manejo de estado con Clases y Hooks en React
+
+## 4.1 Introducción
+
+  Tipos de estado que podemos encontrar en nuestra App:
+  
+  - Modelo de nuestra App
+  - Estado de las peticiones HTTP
+  - Estado de sesión (cookies)
+  - Estado de UI (input de usuario, estado de componentes)
+
+React controla el estado de la IU y de las peticiones HTTP relacionadas con la interfaz (mostrar un loading)
+
+Tipos de cambios en la App:
+
+-Activos: producidos directamente por el usuario (apretar un boton)
+-Pasivos: producidos por otro elemento (la respuesta de una petición a un servidor)
+
+Props vd State: Cuando un dato debe ser uno o otro?
+
+| Pregunta | Respuesta | ¿Debe ser State? |
+| :-------- | :------- | :--- |
+| ¿Voy a usar el dato en el render? | No | No |
+| ¿Puede ser recalculado por Props? | Si | No |
+
+
+### Realizada la práctica sobre los tipos de estado en la nueva carpeta de este curso "Manejo de estado con Clases y Hooks"
+
+Diferencias entre Clases y componentes funcionales:
+
+Ventajas de los componentes de Clase:
+- Unica forma de gestionar estado en React v16.8 o inferior
+- Sintaxis conocida para proramadores de otros lenguajes
+- Las clases tienen una pequeña optimización en la mayoría de navegadores
+- Si estas familiarizado a modelar aplicaciones con herencia, este enfoque puede ser más recomendable
+
+ Desventajas de los componentes de Clase:
+- Son azúcar sintactico, simulan ser Clases pero en realidad en JavaScript las Clases no existen tal y como las conocemos en otros lenguajes
+- Introducen problemas con los contextos y obliga a estar bindeando el contexto a muchas funciones
+- Su sintaxis es más larga y compleja
+- Dificiles de entender para programadores Junior
+
+  Ventajas de los componentes Funcionales
+  -Sintaxis muy limpia
+  -Van acorde con la filosofía de Javascript
+  -Favorecen la composición en React
+  -No hay problemas con el This
+  -Encapsulación
+  -Podemos tener funciones puras
+  -No necesitan "construirse" para devolver un nuevo objeto
+  Desventajas de los componentes Funcionales
+  -No pueden gestionar el estado en React v16.8 o inferior
+  -Obligan a pensar con un enfoque de composición en lugar de herencia
+  -Hay que entender bien los closures en Javascript
+
+Composición o herencia?:
+
+La herencia no existe como tal en Javascript, si que existe la "delegación" que no es lo mismo pero es similar
+
+En general no es mala la herencia pero es mas recomendable la composicion en el caso de Javascript
