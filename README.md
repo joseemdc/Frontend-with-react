@@ -361,3 +361,13 @@ Composición o herencia?:
 La herencia no existe como tal en Javascript, si que existe la "delegación" que no es lo mismo pero es similar
 
 En general no es mala la herencia pero es mas recomendable la composicion en el caso de Javascript
+
+***(29 de abril)***
+
+## 4.2 Gestión de estado con Clases
+
+Uso básico del setState (repaso), he estado revisando el código que proporcionan en el repositiorio oficial de este curso para ver todos los ejemplos de uso que explica
+
+Para las pruebas usa la aplicación de contador que ya he realizado anteriormente.
+
+En las 3 primeras clases del segundo punto realiza ejemplos para entender lo que explica anteriormente.
