@@ -371,3 +371,54 @@ Uso básico del setState (repaso), he estado revisando el código que proporcion
 Para las pruebas usa la aplicación de contador que ya he realizado anteriormente.
 
 En las 3 primeras clases del segundo punto realiza ejemplos para entender lo que explica anteriormente.
+
+***(4 y 5 de mayo)***
+
+Continuación con los usos de setEstate mejor explicados con ejemplos, quizás lo más importante a tener en cuenta de lo que he visto estos días es la asincronía del setEstate, no siempre se ejecuta una actualización de estado cuando se llama a la función que lo hace, React decide cuando hacerlo, asique llamar varias veces a setEstate dependiendo del valor anterior no funcionará, será como ejecutarlo 1 vez sola. Pero esto solo ocurre si se llama a setEstate con un objeto, si se llama con una función, si se puede utilizar varias veces seguidas, se comporta como si fuese "síncrono" aunque en realidad no lo sea
+
+Podemos hacer operaciones justo después de actualizar el estado, para eso hay que llamar a setEstate pasándole tambien una función Calllback que devolverá siempre el estado actualizado
+
+Para terminar, un resumen de todos lo que he visto en todas las clases de este punto del curso relacionado con setEstate:
+
+- setEstate con objeto -> no se debe encadenar llamadas ya que puede causar resultados inesperados por la asincronía
+- setEstate con función -> se pueden encadenar llamadas ya que react va a componerlas, ganamos desacople, pureza y validación
+- setEstate con función y props -> se pueden encadenar llamadas, ganamos desacople, pureza y validación y podemos hacer validación por props sin perder el desacople
+- setEstate con callback -> nos permite realizar operaciones después de acualizar el estado
+
+### Realizado el ejercicio con LocalStorage, dado que esra una solución muy simple no he replicado la aplicación entera para probarlo, simplemente he añadido los métodos que faltaban al código que me proporcionaron
+
+## 4.3 Gestión de estado con Hooks
+
+Al igual que en el apartado anterior empieza siendo un repaso pero más a fondo de los Hooks de los que ya he hablado varias veces en cursos anteriores, las cosas que sean de repaso ya no las pondré aquí para no repetir, pongo solo lo nuevo.
+
+PARA MIGRAR DE COMPONENTES DE CLASE A FUNCIONALES:
+-Hay que tener en cuenta que el estado deja de ser un objeto único a ser un hook o estado por cada variable de estado.
+- En hooks recibimos un valor y devolvemos un valor, al contrario que en las clases que trabajabamos con un objeto
+- Aqui no existe la version del setter con props.
+- El setState también es asíncrono y la forma de esquivarlo es exactamente la misma-
+
+En cuanto a los Hook Effects:
+Nada nuevo, el funcionamiento no cambia, simplemente recordar los usos:
+- useEffect sin dependencias -> se ejecuta cada vez que se produzca una actualización de estado (después de cada render)
+- useEffect con array vacío -> se ejecutará solo después del primer render (componentDidMount)
+- useEffect con una dependencia -> si esa dependencia cambia, se ejecuta el effect
+
+  OJO: no actualizar estado ni dependencia dentro del propio effect o se entrará en un bucle (en los casos 1 y 3)
+
+### Realizado el ejercicio con LocalStorage y useEffect, dado que esra una solución muy simple no he replicado la aplicación entera para probarlo, simplemente he añadido los métodos que faltaban al código que me proporcionaron
+
+Como normal general, si un valor del componente se usa dentro del effect, debe de estar en el array de dependencias
+
+Como recordar el estado (acceder al estado del ultimo render y no al actual):
+Usaremos el hook useRef, nos permite recordar el estado entre renders.
+
+## 4.4 Custom Hooks
+
+También empieza repasando lo que ya se ha explicado en cursos anteriores.
+
+### Realizado el ejercicio con LocalStorage y un custom Hook, dado que esra una solución muy simple no he replicado la aplicación entera para probarlo, simplemente he añadido los métodos que faltaban al código que me proporcionaron
+
+Para poder testear mis custom Hooks de la formas mas facil, deben de ser lo más desacoplados posibles.
+Habria que usar la librería tesing-library
+
+## Finalizado el curso  y realizado primer intento del examen obteniendo un 60% de la puntuación
