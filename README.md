@@ -422,3 +422,59 @@ Para poder testear mis custom Hooks de la formas mas facil, deben de ser lo más
 Habria que usar la librería tesing-library
 
 ## Finalizado el curso  y realizado primer intento del examen obteniendo un 60% de la puntuación
+
+***(6 de mayo)***
+
+## Inicio del curso de manejo de estado y data fetching con Reducers y Thunks en React
+
+## 5.1 Introducción
+
+Arquitectura Flux: es la arquitectura definida por Facebook para crear sus aplicaciones. Redux es una implementación de Flux.
+Sus beneficios son:
+-Vistas deterministas
+-Reproducción de estado determinista
+Esto significa que dado un mismo estado siempre genera la misma vista.
+
+Elemenos que no son deterministas y que se aislan gracias a esta arquitectura: User inputs y Network I/O.
+
+## 5.2 Reducers
+
+La utilidad de reduce nos permite en programación aplicar una función a cada uno de los elementos de una lista con el ebjetivo de acumular un valor (reducir una lista a un valor).
+
+En flux el reducer se aplica sobre un stream de actions
+
+useState vs useReducer:
+
+useState tiene como desventajas la complejidad (si hay muchos) y es dificil separar mi lógica de la actualización del estado.
+
+useReducer permite gestionar el estado con un reducer, al ser una función la podemos separar de nuestra aplicación
+
+Actions: es cualquier evento que se produzca en nuestra aplicación y genere un cambio de estado. Es un objeto con un type y un payload.
+
+Para crear acciones usamos los Action creators, una funcion que recibe un payload y establece el tipo.
+
+Selectors: es una  función que toma un estado y devuelve una visualización del mismo.
+
+Testing de reducers: como son simples funciones puras, es fácil hacer realizar tests unitarios sobre ellos.
+
+Context: nos ofrece una forma de poder compartir una prop entre componentes sin necesidad de tener que ir pasándola en cascada a todos nuestros componentes, se crea con createContext y se usa con useContext. Ya que su uso esp oder compartir nuestro estado por todos los componentes, uno de los usos mas habituales es el theme (si es dark mode o no)
+
+React.memo y useCallback :
+Se usan para mejorar el rendimiento, indicandole a react cuando no es necesario renderizar algo.
+
+React.memo recibe un componente y unas dependencias y devuelve un componente memorizado, mientras esas dependencias no cambien, el componente no se renderizará de nuevo.
+
+useCallback recibe una funcion y unas dependencias, mientras estas no cambien, la referencia de esta función será la misma.
+
+## Realizado el ejercicio propuesto en la plantilla que mandan descargar del repositorio ##
+
+## 5.3 Data Fetching
+
+Nos referimos a traer datos de una fuente externa (servidor, localstorage...)
+
+El fetching lo hacemos en el useEffect y con sus propios metodos podemos hacer catch de los errores, sus uso en general es bastante simple
+
+## Finalizada esta sección, cosas pendientes para esta úlima semana -> 
+- Acabar la última sección de este curso (45min)
+- Aprobar el examen de este curso y del anterior del cual ya realicé el primer intento
+- Realizar las 2 p´racticas restantes equivalentes a los 2 cursos restantes de la carrera (1h y 30min)
