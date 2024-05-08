@@ -475,7 +475,20 @@ Nos referimos a traer datos de una fuente externa (servidor, localstorage...)
 
 El fetching lo hacemos en el useEffect y con sus propios metodos podemos hacer catch de los errores, sus uso en general es bastante simple
 
+
 ## Finalizada esta sección, cosas pendientes para esta úlima semana -> 
 - Acabar la última sección de este curso (45min)
 - Aprobar el examen de este curso y del anterior del cual ya realicé el primer intento
-- Realizar las 2 p´racticas restantes equivalentes a los 2 cursos restantes de la carrera (1h y 30min)
+- Realizar las 2 prácticas restantes equivalentes a los 2 cursos restantes de la carrera (1h y 30min)
+
+***(8 de mayo)***
+
+## 5.4 Thunks
+
+Es una función devuelta por otra función. Básicamente nos permite retrasar la ejecución de cualquier proceso
+
+Uso de Thunks con Reducers: los thunks se usan con reducers para hacer middlewares (operaciones en medio de otras) o para crear action creators asíncronos
+
+## Finalizada el último curso, primer intento de examen, no superado con un 75% de puntuación, cosas pendientes ->
+- Aprobar los 2 últimos exámenes
+- Realizar las 2 prácticas restantes equivalentes a los 2 cursos restantes de la carrera (1h y 30min)
