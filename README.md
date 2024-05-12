@@ -499,3 +499,5 @@ Uso de Thunks con Reducers: los thunks se usan con reducers para hacer middlewar
 ***(12 de mayo)***
 
 ## Realizado el siguiente curso de la carrera que es un taller sobre renderización de aplicaciones en el servidor, para ello he creado una nueva carpeta para el proyecto, he tenido que hacer algunos cambios en algunos métodos o procedimientos porque ya estaban deprecados
+
+## Aprobado el examen del último curso de manejo de estado y data fetching en React, segundo intento del examen del curso de manejo de estado con Clases y Hooks en React, suspendido con un 55% de la puntuación
