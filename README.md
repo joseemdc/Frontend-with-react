@@ -492,3 +492,10 @@ Uso de Thunks con Reducers: los thunks se usan con reducers para hacer middlewar
 ## Finalizada el último curso, primer intento de examen, no superado con un 75% de puntuación, cosas pendientes ->
 - Aprobar los 2 últimos exámenes
 - Realizar las 2 prácticas restantes equivalentes a los 2 cursos restantes de la carrera (1h y 30min)
+
+**(11 de mayo)***
+## Realizado el siguiente curso de la carrera que es un taller sobre Code Splitting en React, para ello he creado una nueva carpeta para el proyecto, he tenido que hacer algunos cambios en algunos métodos o procedimientos porque ya estaban deprecados
+
+**(12 de mayo)***
+
+## Realizado el siguiente curso de la carrera que es un taller sobre renderización de aplicaciones en el servidor, para ello he creado una nueva carpeta para el proyecto, he tenido que hacer algunos cambios en algunos métodos o procedimientos porque ya estaban deprecados
